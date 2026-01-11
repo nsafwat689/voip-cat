@@ -13,8 +13,8 @@ async function startServer() {
   // Serve static files from dist/public in production
   const staticPath =
     process.env.NODE_ENV === "production"
-      ? path.resolve(__dirname, "public")
-      : path.resolve(__dirname, "..", "dist", "public");
+      ? path.resolve(process.cwd(), "public")path.resolve(process.cwd(), "dist", "public")
+      : path.resolve(process.cwd(), "..", "dist", "public");
 
   app.use(express.static(staticPath));
 
@@ -23,10 +23,9 @@ async function startServer() {
     res.sendFile(path.join(staticPath, "index.html"));
   });
 
-  const port = process.env.PORT || 3000;
-
+  const port = process.env.PORT || 3e3;
   server.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}/`);
+    console.log(` Server running on http://localhost:${port}/`);
   });
 }
 
