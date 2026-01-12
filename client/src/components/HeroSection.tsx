@@ -72,7 +72,7 @@ export default function HeroSection() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               {/* Image Container with gradient overlay */}
               <img
-                src="/images/hero-voip-communication.png"
+                src="/images/hero-voip-communication.jpg"
                 alt="VoIP Communication"
                 className="w-full h-auto object-cover"
               />
