@@ -47,15 +47,15 @@
 
 :root {
   /* Logo-inspired Cyber Blue Palette */
-  --primary: #00A3FF; /* Bright Electric Blue from logo circuits */
+  --primary: #1e40af; /* Bright Electric Blue from logo circuits */
   --primary-foreground: #ffffff;
   --secondary: #001B3D; /* Deep Midnight Blue from logo base */
   --secondary-foreground: #ffffff;
   --accent: #00E0FF; /* Cyan highlight from logo glow */
   --accent-foreground: #001B3D;
-  --sidebar-primary: #00A3FF;
+  --sidebar-primary: #1e40af;
   --sidebar-primary-foreground: #ffffff;
-  --chart-1: #00A3FF;
+  --chart-1: #1e40af;
   --chart-2: #001B3D;
   --chart-3: #00E0FF;
   --chart-4: #0055FF;
@@ -73,20 +73,20 @@
   --destructive-foreground: #ffffff;
   --border: #E2E8F0;
   --input: #F8FAFC;
-  --ring: #00A3FF;
+  --ring: #1e40af;
   --sidebar: #ffffff;
   --sidebar-foreground: #001B3D;
   --sidebar-accent: #F0F7FF;
-  --sidebar-accent-foreground: #00A3FF;
+  --sidebar-accent-foreground: #1e40af;
   --sidebar-border: #E2E8F0;
-  --sidebar-ring: #00A3FF;
+  --sidebar-ring: #1e40af;
 }
 
 .dark {
   /* Refined Dark Mode: Navy & Deep Blue instead of Baby Blue */
   --primary: #0055FF; /* Deeper Navy Blue */
   --primary-foreground: #ffffff;
-  --secondary: #00A3FF; /* Use the bright blue as secondary/accent in dark mode */
+  --secondary: #1e40af; /* Use the bright blue as secondary/accent in dark mode */
   --secondary-foreground: #ffffff;
   --accent: #0077FF; /* Stronger Blue accent */
   --accent-foreground: #ffffff;
@@ -106,7 +106,7 @@
   --input: #001B3D;
   --ring: #0055FF;
   --chart-1: #0055FF;
-  --chart-2: #00A3FF;
+  --chart-2: #1e40af;
   --chart-3: #0077FF;
   --chart-4: #003366;
   --chart-5: #001B3D;
