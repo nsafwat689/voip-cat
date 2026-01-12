@@ -1,6 +1,11 @@
 {
+  "framework": "vite",
   "buildCommand": "pnpm build",
-  "env": {
-    "NODE_ENV": "production"
-  }
+  "outputDirectory": "dist/client",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }
