@@ -29,7 +29,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <img
-              src="/images/logo-fox.png"
+              src="/images/logo-fox.jpg"
               alt="VoIP Cat Logo"
               className="h-12 w-auto"
             />
