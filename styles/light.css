@@ -86,7 +86,7 @@ body[data-theme="light"] .hero-section .gradient-text {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
+} 
 
 /* CLOUD PBX SOLUTIONS section - Navy Background */
 body[data-theme="light"] section#cloud-pbx {
