@@ -52,7 +52,7 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-[#0B1F3F]/205 border border-primary/20 p-10 space-y-8 flex flex-col rounded-2xl backdrop-blur-sm relative group hover:border-primary/50 transition-all duration-500"
+              className="bg-white/10 border border-primary/20 p-10 space-y-8 flex flex-col rounded-2xl backdrop-blur-sm relative group hover:border-primary/50 transition-all duration-500"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Quote Icon */}
