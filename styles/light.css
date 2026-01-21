@@ -98,6 +98,63 @@ body[data-theme="light"] section#cloud-pbx * {
   color: #ffffff !important;
 }
 
+/* CLOUD PBX Cards - Dark Blue Background like screenshot */
+body[data-theme="light"] section#cloud-pbx .card,
+body[data-theme="light"] section#cloud-pbx [class*="card"] {
+  background: linear-gradient(145deg, #0B1F3F 0%, #0D2548 100%) !important;
+  border: 1px solid rgba(0, 163, 255, 0.2) !important;
+  color: #E8F0FF !important;
+}
+
+/* Card titles and headings in CLOUD PBX */
+body[data-theme="light"] section#cloud-pbx .card h3,
+body[data-theme="light"] section#cloud-pbx .card h2,
+body[data-theme="light"] section#cloud-pbx [class*="card"] h3,
+body[data-theme="light"] section#cloud-pbx [class*="card"] h2 {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+/* Price styling in CLOUD PBX cards */
+body[data-theme="light"] section#cloud-pbx .card [class*="price"],
+body[data-theme="light"] section#cloud-pbx [class*="card"] [class*="price"] {
+  color: #00A3FF !important;
+  font-weight: 700 !important;
+}
+
+/* Button styling in CLOUD PBX cards */
+body[data-theme="light"] section#cloud-pbx .card button,
+body[data-theme="light"] section#cloud-pbx [class*="card"] button {
+  background-color: #00A3FF !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+body[data-theme="light"] section#cloud-pbx .card button:hover,
+body[data-theme="light"] section#cloud-pbx [class*="card"] button:hover {
+  background-color: #0088DD !important;
+  box-shadow: 0 8px 20px rgba(0, 163, 255, 0.3) !important;
+}
+
+/* Most Popular badge */
+body[data-theme="light"] section#cloud-pbx [class*="badge"],
+body[data-theme="light"] section#cloud-pbx [class*="popular"] {
+  background-color: #00A3FF !important;
+  color: #ffffff !important;
+}
+
+/* Text and descriptions in CLOUD PBX cards */
+body[data-theme="light"] section#cloud-pbx .card p,
+body[data-theme="light"] section#cloud-pbx [class*="card"] p {
+  color: #B8C7E0 !important;
+}
+
+/* Icons in CLOUD PBX cards */
+body[data-theme="light"] section#cloud-pbx .card svg,
+body[data-theme="light"] section#cloud-pbx [class*="card"] svg {
+  color: #00A3FF !important;
+}
+
 /* CLIENT FEEDBACK section - Navy Background */
 body[data-theme="light"] section#testimonials {
   background: linear-gradient(135deg, #001B3D 0%, #002B5D 100%) !important;
