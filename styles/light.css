@@ -65,3 +65,16 @@ body[data-theme="light"] {
 body[data-theme="light"] .network-bg {
   opacity: 0.08;
 }
+
+/* Force white background on all major elements */
+body[data-theme="light"] #root,
+body[data-theme="light"] main,
+body[data-theme="light"] section {
+  background-color: #FFFFFF !important;
+}
+
+/* Ensure cards have subtle blue tint */
+body[data-theme="light"] .card,
+body[data-theme="light"] [class*="card"] {
+  background-color: #FAFCFF !important;
+}
