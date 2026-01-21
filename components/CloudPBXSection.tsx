@@ -1,4 +1,5 @@
-import { Button } from '@/components/ui/button';
+74
+  import { Button } from '@/components/ui/button';
 import { Check, Cpu, Layers, Server, Shield } from 'lucide-react';
 
 /**
@@ -71,8 +72,7 @@ export default function CloudPBXSection() {
                 key={index}
                 className={`relative rounded-2xl transition-all duration-500 group ${
                   plan.highlighted
-                    ? 'lg:scale-110 bg-bcard/5 border-2 border-primary shadow-[0_0_30px_rgba(0,163,255,0.2)] z-10'
-                    : 'bg-card/5 border border-primary/10 hover:border-primary/30 backdrop-blur-sm'
+                  ? 'lg:scale-110 bg-gradient-to-br from-[#0B1F3F] to-[#0D2548] border-2 border-primary shadow-[0_0_30px_rgba(0,163,255,0.2)] z-10'                    : 'bg-card/5 border border-primary/10 hover:border-primary/30 backdrop-blur-sm'
                 }`}
               >
                 {/* Highlight Badge */}
