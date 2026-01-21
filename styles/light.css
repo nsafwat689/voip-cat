@@ -88,6 +88,36 @@ body[data-theme="light"] .hero-section .gradient-text {
   background-clip: text;
 }
 
+/* CLOUD PBX SOLUTIONS section - Navy Background */
+body[data-theme="light"] section#cloud-pbx {
+  background: linear-gradient(135deg, #001B3D 0%, #002B5D 100%) !important;
+  color: #ffffff !important;
+}
+
+body[data-theme="light"] section#cloud-pbx * {
+  color: #ffffff !important;
+}
+
+/* CLIENT FEEDBACK section - Navy Background */
+body[data-theme="light"] section#testimonials {
+  background: linear-gradient(135deg, #001B3D 0%, #002B5D 100%) !important;
+  color: #ffffff !important;
+}
+
+body[data-theme="light"] section#testimonials * {
+  color: #ffffff !important;
+}
+
+/* Footer - Navy Background */
+body[data-theme="light"] footer {
+  background: linear-gradient(135deg, #001B3D 0%, #002B5D 100%) !important;
+  color: #ffffff !important;
+}
+
+body[data-theme="light"] footer * {
+  color: #ffffff !important;
+}
+
 /* Clean Professional Background for other sections */
 body[data-theme="light"] .network-bg {
   background: #ffffff !important;
@@ -97,13 +127,13 @@ body[data-theme="light"] .network-bg:nth-child(even) {
   background: #F8FAFC !important;
 }
 
-/* Force white background on all major elements except hero */
+/* Force white background on all major elements except navy sections */
 body[data-theme="light"] #root,
 body[data-theme="light"] main {
   background-color: #ffffff !important;
 }
 
-body[data-theme="light"] section:not(:first-of-type) {
+body[data-theme="light"] section:not(:first-of-type):not(#cloud-pbx):not(#testimonials) {
   background-color: #ffffff !important;
 }
 
