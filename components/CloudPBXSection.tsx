@@ -71,7 +71,7 @@ export default function CloudPBXSection() {
                 key={index}
                 className={`relative rounded-2xl transition-all duration-500 group ${
                   plan.highlighted
-                    ? 'lg:scale-110 bg-background border-2 border-primary shadow-[0_0_30px_rgba(0,163,255,0.2)] z-10'
+                    ? 'lg:scale-110 bg-bcard/5 border-2 border-primary shadow-[0_0_30px_rgba(0,163,255,0.2)] z-10'
                     : 'bg-card/5 border border-primary/10 hover:border-primary/30 backdrop-blur-sm'
                 }`}
               >
