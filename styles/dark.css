@@ -1,0 +1,132 @@
+/* Dark Mode Color Scheme */
+/* Sophisticated Dark Theme with Enhanced Contrast */
+
+:root[data-theme="dark"] {
+  /* Primary Colors - Bright Electric Blue (enhanced for dark backgrounds) */
+  --primary: #00D4FF;
+  --primary-foreground: #000000;
+  
+  /* Secondary Colors - Light Gray for contrast */
+  --secondary: #E0E8F0;
+  --secondary-foreground: #000000;
+  
+  /* Accent Colors - Bright Cyan for dark mode */
+  --accent: #00F0FF;
+  --accent-foreground: #000000;
+  
+  /* Sidebar Colors */
+  --sidebar-primary: #00D4FF;
+  --sidebar-primary-foreground: #000000;
+  --sidebar: #0F1419;
+  --sidebar-foreground: #E0E8F0;
+  --sidebar-accent: #1A2332;
+  --sidebar-accent-foreground: #00D4FF;
+  --sidebar-border: #2A3F5F;
+  --sidebar-ring: #00D4FF;
+  
+  /* Chart Colors - Adjusted for dark backgrounds */
+  --chart-1: #00D4FF;
+  --chart-2: #E0E8F0;
+  --chart-3: #00F0FF;
+  --chart-4: #0088FF;
+  --chart-5: #FFD700;
+  
+  /* Background & Foreground */
+  --background: #0A0E14;
+  --foreground: #E0E8F0;
+  --card: #1A1F2E;
+  --card-foreground: #E0E8F0;
+  --popover: #1A1F2E;
+  --popover-foreground: #E0E8F0;
+  
+  /* Muted Colors */
+  --muted: #2A3F5F;
+  --muted-foreground: #94A3B8;
+  
+  /* Destructive */
+  --destructive: #FF6B6B;
+  --destructive-foreground: #000000;
+  
+  /* Border & Input */
+  --border: #2A3F5F;
+  --input: #0F1419;
+  --ring: #00D4FF;
+  
+  /* Radius */
+  --radius: 0.75rem;
+}
+
+/* Dark Mode Specific Styles */
+body[data-theme="dark"] {
+  background-color: #0A0E14;
+  color: #E0E8F0;
+}
+
+body[data-theme="dark"] .network-bg {
+  background: #0A0E14;
+}
+
+body[data-theme="dark"] .network-bg:nth-child(even) {
+  background: #0F1419;
+}
+
+body[data-theme="dark"] .card-elevated {
+  background-color: #1A1F2E;
+  border-color: #2A3F5F;
+}
+
+body[data-theme="dark"] .card-elevated:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 212, 255, 0.15), 0 8px 10px -6px rgba(0, 212, 255, 0.1);
+  border-color: rgba(0, 212, 255, 0.4);
+}
+
+body[data-theme="dark"] .btn-glow {
+  background-color: #00D4FF;
+  color: #000000;
+  box-shadow: 0 4px 14px 0 rgba(0, 212, 255, 0.3);
+}
+
+body[data-theme="dark"] .btn-glow:hover {
+  background-color: #00E8FF;
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+}
+
+/* Dark Mode Scrollbar */
+body[data-theme="dark"] ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #0F1419;
+}
+
+body[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #2A3F5F;
+  border-radius: 4px;
+}
+
+body[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: #3A5F7F;
+}
+
+/* Dark Mode Text Selection */
+body[data-theme="dark"] ::selection {
+  background-color: #00D4FF;
+  color: #000000;
+}
+
+/* Dark Mode Input Placeholders */
+body[data-theme="dark"] input::placeholder,
+body[data-theme="dark"] textarea::placeholder {
+  color: #94A3B8;
+}
+
+/* Dark Mode Links */
+body[data-theme="dark"] a {
+  color: #00D4FF;
+}
+
+body[data-theme="dark"] a:hover {
+  color: #00F0FF;
+}
