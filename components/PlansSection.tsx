@@ -74,7 +74,7 @@ export default function PlansSection() {
                 key={index}
                 className={`relative rounded-2xl transition-all duration-500 group ${
                   plan.highlighted
-                  ? 'md:scale-110 bg-secondary z-10 border-2 border-primary shadow-[0_0_40px_rgba(0,163,255,0.2)]'                    : 'bg-card border border-border hover:border-primary/30'
+                  ? 'md:scale-110 bg-[#0B1F3F] z-10 border-2 border-primary shadow-[0_0_40px_rgba(0,163,255,0.2)]'                    : 'bg-card border border-border hover:border-primary/30'
                 }`}
               >
                 {/* Highlight Badge */}
