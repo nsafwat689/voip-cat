@@ -1,103 +1,107 @@
-/* Light Mode Color Scheme - Dark Navy Theme (matching your screenshot) */
-/* Same colors as dark mode for a consistent professional look */
+/* Light Mode Color Scheme - EXACT COPY from voip-catfinal */
+/* Logo-inspired Cyber Blue Palette - Clean White Background */
 
 :root[data-theme="light"] {
-  /* Primary Colors - Bright Cyan/Blue */
-  --primary: #00D4FF;
+  /* Primary Colors - Bright Electric Blue from logo circuits */
+  --primary: #00A3FF;
   --primary-foreground: #ffffff;
   
-  /* Secondary Colors - Light for contrast on dark bg */
-  --secondary: #E0E8F0;
-  --secondary-foreground: #0A0E14;
+  /* Secondary Colors - Deep Midnight Blue from logo base */
+  --secondary: #001B3D;
+  --secondary-foreground: #ffffff;
   
-  /* Accent Colors - Bright Cyan */
-  --accent: #00F0FF;
-  --accent-foreground: #0A0E14;
+  /* Accent Colors - Cyan highlight from logo glow */
+  --accent: #00E0FF;
+  --accent-foreground: #001B3D;
   
   /* Sidebar Colors */
-  --sidebar-primary: #00D4FF;
-  --sidebar-primary-foreground: #0A0E14;
-  --sidebar: #0F1419;
-  --sidebar-foreground: #E0E8F0;
-  --sidebar-accent: #1A2332;
-  --sidebar-accent-foreground: #00D4FF;
-  --sidebar-border: #2A3F5F;
-  --sidebar-ring: #00D4FF;
+  --sidebar-primary: #00A3FF;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #001B3D;
+  --sidebar-accent: #F0F7FF;
+  --sidebar-accent-foreground: #00A3FF;
+  --sidebar-border: #E2E8F0;
+  --sidebar-ring: #00A3FF;
   
   /* Chart Colors */
-  --chart-1: #00D4FF;
-  --chart-2: #E0E8F0;
-  --chart-3: #00F0FF;
-  --chart-4: #0088FF;
-  --chart-5: #FFD700;
+  --chart-1: #00A3FF;
+  --chart-2: #001B3D;
+  --chart-3: #00E0FF;
+  --chart-4: #0055FF;
+  --chart-5: #000D1F;
   
-  /* Background & Foreground - DARK NAVY like your screenshot */
-  --background: #0A0E14;
-  --foreground: #E0E8F0;
-  --card: #1A1F2E;
-  --card-foreground: #E0E8F0;
-  --popover: #1A1F2E;
-  --popover-foreground: #E0E8F0;
+  /* Background & Foreground - WHITE BACKGROUND */
+  --background: #ffffff;
+  --foreground: #001B3D;
+  --card: #ffffff;
+  --card-foreground: #001B3D;
+  --popover: #ffffff;
+  --popover-foreground: #001B3D;
   
   /* Muted Colors */
-  --muted: #2A3F5F;
-  --muted-foreground: #94A3B8;
+  --muted: #F0F7FF;
+  --muted-foreground: #475569;
   
   /* Destructive */
-  --destructive: #FF6B6B;
+  --destructive: #ef4444;
   --destructive-foreground: #ffffff;
   
   /* Border & Input */
-  --border: #2A3F5F;
-  --input: #0F1419;
-  --ring: #00D4FF;
+  --border: #E2E8F0;
+  --input: #F8FAFC;
+  --ring: #00A3FF;
   
   /* Radius */
   --radius: 0.75rem;
 }
 
-/* Light Mode Specific Styles - Using Dark Navy Background */
+/* Light Mode Specific Styles */
 body[data-theme="light"] {
-  background-color: #0A0E14 !important;
-  color: #E0E8F0 !important;
+  background-color: #ffffff !important;
+  color: #001B3D !important;
 }
 
+/* Clean Professional Background */
 body[data-theme="light"] .network-bg {
-  background: #0A0E14 !important;
-  opacity: 1;
+  background: #ffffff !important;
 }
 
-/* Force dark navy background on all major elements */
+body[data-theme="light"] .network-bg:nth-child(even) {
+  background: #F8FAFC !important;
+}
+
+/* Force white background on all major elements */
 body[data-theme="light"] #root,
 body[data-theme="light"] main,
 body[data-theme="light"] section {
-  background-color: #0A0E14 !important;
+  background-color: #ffffff !important;
 }
 
-/* Dark cards with navy tint */
+/* White cards */
 body[data-theme="light"] .card,
 body[data-theme="light"] [class*="card"] {
-  background-color: #1A1F2E !important;
-  border-color: #2A3F5F !important;
+  background-color: #ffffff !important;
+  border-color: #E2E8F0 !important;
 }
 
 body[data-theme="light"] .card-elevated {
-  background-color: #1A1F2E !important;
-  border-color: #2A3F5F !important;
+  background-color: #ffffff !important;
+  border-color: #E2E8F0 !important;
 }
 
 body[data-theme="light"] .card-elevated:hover {
-  box-shadow: 0 10px 25px -5px rgba(0, 212, 255, 0.15), 0 8px 10px -6px rgba(0, 212, 255, 0.1) !important;
-  border-color: rgba(0, 212, 255, 0.4) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 163, 255, 0.1), 0 8px 10px -6px rgba(0, 163, 255, 0.1) !important;
+  border-color: rgba(0, 163, 255, 0.3) !important;
 }
 
 body[data-theme="light"] .btn-glow {
-  background-color: #00D4FF !important;
-  color: #000000 !important;
-  box-shadow: 0 4px 14px 0 rgba(0, 212, 255, 0.3) !important;
+  background-color: #00A3FF !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px 0 rgba(0, 163, 255, 0.39) !important;
 }
 
 body[data-theme="light"] .btn-glow:hover {
-  background-color: #00E8FF !important;
-  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5) !important;
+  background-color: rgba(0, 163, 255, 0.9) !important;
+  box-shadow: 0 6px 20px rgba(0, 163, 255, 0.5) !important;
 }
