@@ -1,10 +1,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Import Theme-Specific CSS */
+@import "./styles/light.css";
+@import "./styles/dark.css";
+
 /* Import Google Fonts for Modern Tech Design */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
-
-@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -82,41 +84,6 @@
   --sidebar-ring: #00A3FF;
 }
 
-.dark {
-  --primary: #00A3FF;
-  --primary-foreground: #ffffff;
-  --secondary: #00E0FF;
-  --secondary-foreground: #ffffff;
-  --accent: #00E0FF;
-  --accent-foreground: #ffffff;
-  --sidebar-primary: #00A3FF;
-  --sidebar-primary-foreground: #ffffff;
-  --background: #000000; /* Pure black background */
-  --foreground: #F1F5F9;
-  --card: #0A0A0A; /* Very dark gray/black for cards */
-  --card-foreground: #F1F5F9;
-  --popover: #0A0A0A; /* Very dark gray/black for popovers */
-  --popover-foreground: #F1F5F9;
-  --muted: #1A1A1A; /* Dark gray for muted elements */
-  --muted-foreground: #A0A0A0;
-  --destructive: #ef4444;
-  --destructive-foreground: #ffffff;
-  --border: #1A1A1A; /* Dark gray borders */
-  --input: #0A0A0A; /* Very dark gray for inputs */
-  --ring: #00A3FF;
-  --chart-1: #00A3FF;
-  --chart-2: #00E0FF;
-  --chart-3: #0055FF;
-  --chart-4: #00A3FF;
-  --chart-5: #1A1A1A;
-  --sidebar: #0A0A0A; /* Very dark gray/black for sidebar */
-  --sidebar-foreground: #F1F5F9;
-  --sidebar-accent: #000000; /* Pure black for sidebar accent */
-  --sidebar-accent-foreground: #00A3FF;
-  --sidebar-border: #1A1A1A; /* Dark gray borders */
-  --sidebar-ring: #00A3FF;
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -124,6 +91,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Exo 2', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold tracking-tight;
@@ -203,14 +171,6 @@
   
   .network-bg:nth-child(even) {
     background: #F8FAFC;
-  }
-  /* Dark mode background adjustments */
-  .dark .network-bg {
-    background: #000000;
-  }
-  
-  .dark .network-bg:nth-child(even) {
-    background: #0A0A0A;
   }
   .container {
     width: 100%;
