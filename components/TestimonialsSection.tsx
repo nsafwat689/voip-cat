@@ -30,7 +30,7 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section id="testimonials" className="py-20 md:py-32 bg-secondary  relative overflow-hidden">
+    <section id="testimonials" className="py-20 md:py-32 bg-[#0B1F3F] dark:bg-[#0B1F3F]  relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 -z-10"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[150px] -z-10"></div>
@@ -52,7 +52,7 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white/10 border border-primary/20 p-10 space-y-8 flex flex-col rounded-2xl backdrop-blur-sm relative group hover:border-primary/50 transition-all duration-500"
+              className="bg-white/10 dark:bg-white/10 border border-primary/20 p-10 space-y-8 flex flex-col rounded-2xl backdrop-blur-sm relative group hover:border-primary/50 transition-all duration-500"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Quote Icon */}
