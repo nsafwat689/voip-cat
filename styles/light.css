@@ -5,53 +5,57 @@
   /* Primary Colors - Bright Electric Blue from logo circuits */
   --primary: #00A3FF;
   --primary-foreground: #ffffff;
-  
+
   /* Secondary Colors - Deep Midnight Blue from logo base */
   --secondary: #001B3D;
   --secondary-foreground: #ffffff;
-  
+
   /* Accent Colors - Cyan highlight from logo glow */
   --accent: #00E0FF;
   --accent-foreground: #001B3D;
-  
+
   /* Sidebar Colors */
   --sidebar-primary: #00A3FF;
   --sidebar-primary-foreground: #ffffff;
   --sidebar: #ffffff;
   --sidebar-foreground: #001B3D;
-  --sidebar-accent: #F0F7FF;
+  --sidebar-accent: #f0f7FF;
   --sidebar-accent-foreground: #00A3FF;
   --sidebar-border: #E2E8F0;
   --sidebar-ring: #00A3FF;
-  
+
   /* Chart Colors */
   --chart-1: #00A3FF;
   --chart-2: #001B3D;
   --chart-3: #00E0FF;
   --chart-4: #0055FF;
-  --chart-5: #000D1F;
-  
-  /* Background & Foreground - WHITE BACKGROUND */
+  --chart-5: #00001f;
+
+  /* Background Colors - Clean Professional White */
   --background: #ffffff;
   --foreground: #001B3D;
+
+  /* Card Colors */
   --card: #ffffff;
   --card-foreground: #001B3D;
+
+  /* Popover Colors */
   --popover: #ffffff;
   --popover-foreground: #001B3D;
-  
+
   /* Muted Colors */
-  --muted: #F0F7FF;
-  --muted-foreground: #475569;
-  
-  /* Destructive */
-  --destructive: #ef4444;
+  --muted: #F8FAFC;
+  --muted-foreground: #64748B;
+
+  /* Destructive Colors */
+  --destructive: #EF4444;
   --destructive-foreground: #ffffff;
-  
+
   /* Border & Input */
   --border: #E2E8F0;
-  --input: #F8FAFC;
+  --input: #E2E8F0;
   --ring: #00A3FF;
-  
+
   /* Radius */
   --radius: 0.75rem;
 }
@@ -62,7 +66,29 @@ body[data-theme="light"] {
   color: #001B3D !important;
 }
 
-/* Clean Professional Background */
+/* Hero Section - Navy Background like voip-catfinal */
+body[data-theme="light"] section:first-of-type,
+body[data-theme="light"] .hero-section {
+  background: linear-gradient(135deg, #001B3D 0%, #002B5D 100%) !important;
+  color: #ffffff !important;
+}
+
+/* Hero section text colors */
+body[data-theme="light"] section:first-of-type *,
+body[data-theme="light"] .hero-section * {
+  color: #ffffff !important;
+}
+
+/* Keep VOIP text cyan in hero */
+body[data-theme="light"] section:first-of-type .gradient-text,
+body[data-theme="light"] .hero-section .gradient-text {
+  background: linear-gradient(135deg, #00A3FF 0%, #00E0FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Clean Professional Background for other sections */
 body[data-theme="light"] .network-bg {
   background: #ffffff !important;
 }
@@ -71,10 +97,13 @@ body[data-theme="light"] .network-bg:nth-child(even) {
   background: #F8FAFC !important;
 }
 
-/* Force white background on all major elements */
+/* Force white background on all major elements except hero */
 body[data-theme="light"] #root,
-body[data-theme="light"] main,
-body[data-theme="light"] section {
+body[data-theme="light"] main {
+  background-color: #ffffff !important;
+}
+
+body[data-theme="light"] section:not(:first-of-type) {
   background-color: #ffffff !important;
 }
 
