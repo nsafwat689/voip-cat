@@ -33,8 +33,7 @@ export default function CloudPBXSection() {
       period: '/month',
       description: 'Operating a bigger call center? The Platinum Cloud PBX was designed for enterprise-level call volumes.',
       feature: 'Up to 80 concurrent calls',
-      highlighted: true,
-    },
+    highlighted: false,    },
     {
       name: 'Enterprise Mesh',
       icon: Shield,
