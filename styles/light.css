@@ -231,3 +231,12 @@ body[data-theme="light"] .btn-glow:hover {
   background-color: rgba(0, 163, 255, 0.9) !important;
   box-shadow: 0 6px 20px rgba(0, 163, 255, 0.5) !important;
 }
+
+                         /* AGGRESSIVE FIX - Force dark blue on any white/light backgrounds in CLOUD PBX */
+body[data-theme="light"] section#cloud-pbx div[style*="background"],
+body[data-theme="light"] section#cloud-pbx div[style*="background-color"],
+body[data-theme="light"] section#cloud-pbx div[class],
+body[data-theme="light"] section#cloud-pbx div:not([class*="gradient"]):not([class*="badge"]):not([class*="badge"]) {
+  background: linear-gradient(145deg, #0B1F3F 0%, #0D2548 100%) !important;
+  background-color: #0B1F3F !important;
+}
