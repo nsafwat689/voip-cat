@@ -1,55 +1,55 @@
-/* Light Mode Color Scheme - Logo DNA Identity */
-/* Inspired by the Electric Blue circuits and Deep Midnight Blue base of the VOIP CAT logo */
+/* Light Mode Color Scheme - Navy Blue Theme */
+/* Inspired by the deep navy background from dark mode with inverted bright elements */
 
 :root[data-theme="light"] {
-  /* Primary Colors - Electric Blue from logo circuits */
-  --primary: #00A3FF;
-  --primary-foreground: #ffffff;
+  /* Primary Colors - Bright Electric Blue (keeps the vibrant cyan from dark mode) */
+  --primary: #00B4FF;
+  --primary-foreground: #001B3D;
   
-  /* Secondary Colors - Deep Midnight Blue from logo base */
-  --secondary: #001B3D;
-  --secondary-foreground: #ffffff;
+  /* Secondary Colors - Light Blue Gradient */
+  --secondary: #E3F2FD;
+  --secondary-foreground: #001B3D;
   
-  /* Accent Colors - Cyan Glow from logo highlights */
+  /* Accent Colors - Vivid Cyan (matching dark mode accent) */
   --accent: #00E0FF;
   --accent-foreground: #001B3D;
   
-  /* Sidebar Colors */
+  /* Sidebar Colors - Soft Light Blue */
   --sidebar-primary: #00A3FF;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar: #F8FAFC;
+  --sidebar: #F5FBFF;
   --sidebar-foreground: #001B3D;
-  --sidebar-accent: #E0F2FE;
+  --sidebar-accent: #E3F2FD;
   --sidebar-accent-foreground: #00A3FF;
-  --sidebar-border: #E2E8F0;
+  --sidebar-border: #B3E5FC;
   --sidebar-ring: #00A3FF;
   
-  /* Chart Colors - Clean and Professional */
+  /* Chart Colors - Keeping dark mode palette */
   --chart-1: #00A3FF;
   --chart-2: #001B3D;
   --chart-3: #00E0FF;
-  --chart-4: #0055FF;
-  --chart-5: #000D1F;
+  --chart-4: #0088FF;
+  --chart-5: #003D7A;
   
-  /* Background & Foreground - High Contrast Light Theme */
-  --background: #ffffff;
+  /* Background & Foreground - Clean white with navy text */
+  --background: #FFFFFF;
   --foreground: #001B3D;
-  --card: #ffffff;
+  --card: #FAFCFF;
   --card-foreground: #001B3D;
-  --popover: #ffffff;
+  --popover: #FFFFFF;
   --popover-foreground: #001B3D;
   
-  /* Muted Colors - Soft Blue Grays */
-  --muted: #F1F5F9;
-  --muted-foreground: #475569;
+  /* Muted Colors - Light blue tints */
+  --muted: #E3F2FD;
+  --muted-foreground: #004D8C;
   
   /* Destructive */
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
   
-  /* Border & Input */
-  --border: #E2E8F0;
-  --input: #F8FAFC;
+  /* Border & Input - Light blue borders */
+  --border: #B3E5FC;
+  --input: #F5FBFF;
   --ring: #00A3FF;
   
   /* Radius */
@@ -58,44 +58,10 @@
 
 /* Light Mode Specific Styles */
 body[data-theme="light"] {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   color: #001B3D;
 }
 
 body[data-theme="light"] .network-bg {
-  background: #ffffff;
-}
-
-body[data-theme="light"] .network-bg:nth-child(even) {
-  background: #F8FAFC;
-}
-
-body[data-theme="light"] .card-elevated {
-  background-color: #ffffff;
-  border-color: #E2E8F0;
-}
-
-body[data-theme="light"] .card-elevated:hover {
-  box-shadow: 0 10px 25px -5px rgba(0, 163, 255, 0.15), 0 8px 10px -6px rgba(0, 163, 255, 0.1);
-  border-color: rgba(0, 163, 255, 0.3);
-}
-
-body[data-theme="light"] .btn-glow {
-  background-color: #00A3FF;
-  color: #ffffff;
-  box-shadow: 0 4px 14px 0 rgba(0, 163, 255, 0.3);
-}
-
-body[data-theme="light"] .btn-glow:hover {
-  background-color: #0088FF;
-  box-shadow: 0 6px 20px rgba(0, 163, 255, 0.4);
-}
-
-/* Light Mode Links */
-body[data-theme="light"] a {
-  color: #00A3FF;
-}
-
-body[data-theme="light"] a:hover {
-  color: #0088FF;
+  opacity: 0.08;
 }
