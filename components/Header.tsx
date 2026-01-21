@@ -71,7 +71,7 @@ export default function Header() {
           <div className="flex items-center gap-2 md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 hover:bg-muted rounded-lg transition-colors"
+              className="p-2 hover:bg-muted rounded-lg transition-colors">
             {mobileMenuOpen ? (
               <X className="w-6 h-6 text-foreground" />
             ) : (
