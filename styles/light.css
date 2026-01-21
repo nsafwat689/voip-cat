@@ -8,17 +8,17 @@
   --primary-foreground: #ffffff;
   
   /* Secondary Colors - Deep Midnight Blue from logo base */
-  --secondary: #001B3D;
-  --secondary-foreground: #ffffff;
+  --secondary: #0088FF; /* Bright Blue - Logo DNA identity */
+  --secondary-foreground: #001B3D; /* Dark text on bright blue */
   
   /* Accent Colors - Cyan highlight from logo glow */
   --accent: #00E0FF;
   --accent-foreground: #001B3D;
   
-  /* Sidebar Colors */
+  /* Sidebar Colors - Light Blue Tint */
   --sidebar-primary: #00A3FF;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar: #ffffff;
+  --sidebar: #FAFCFF; /* Very subtle blue tint */
   --sidebar-foreground: #001B3D;
   --sidebar-accent: #F0F7FF;
   --sidebar-accent-foreground: #00A3FF;
@@ -32,12 +32,12 @@
   --chart-4: #0055FF;
   --chart-5: #000D1F;
   
-  /* Background & Foreground */
-  --background: #ffffff;
+  /* Background & Foreground - Soft Blue Tint like Logo Aura */
+  --background: #F5FAFF; /* Soft blue-white - logo DNA atmosphere */
   --foreground: #001B3D;
-  --card: #ffffff;
+  --card: #F8FCFF; /* Card with subtle blue glow */
   --card-foreground: #001B3D;
-  --popover: #ffffff;
+  --popover: #F5FAFF; /* Matches background */
   --popover-foreground: #001B3D;
   
   /* Muted Colors */
@@ -59,35 +59,10 @@
 
 /* Light Mode Specific Styles */
 body[data-theme="light"] {
-  background-color: #ffffff;
+  background-color: #F5FAFF; /* Soft blue-white matching logo atmosphere */
   color: #001B3D;
 }
 
 body[data-theme="light"] .network-bg {
-  background: #ffffff;
-}
-
-body[data-theme="light"] .network-bg:nth-child(even) {
-  background: #F8FAFC;
-}
-
-body[data-theme="light"] .card-elevated {
-  background-color: #ffffff;
-  border-color: #E2E8F0;
-}
-
-body[data-theme="light"] .card-elevated:hover {
-  box-shadow: 0 10px 25px -5px rgba(0, 163, 255, 0.1), 0 8px 10px -6px rgba(0, 163, 255, 0.1);
-  border-color: rgba(0, 163, 255, 0.3);
-}
-
-body[data-theme="light"] .btn-glow {
-  background-color: #00A3FF;
-  color: #ffffff;
-  box-shadow: 0 4px 14px 0 rgba(0, 163, 255, 0.39);
-}
-
-body[data-theme="light"] .btn-glow:hover {
-  background-color: rgba(0, 163, 255, 0.9);
-  box-shadow: 0 6px 20px rgba(0, 163, 255, 0.5);
+  opacity: 0.15; /* More visible network pattern */
 }
