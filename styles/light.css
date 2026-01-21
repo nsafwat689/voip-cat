@@ -106,6 +106,16 @@ body[data-theme="light"] section#cloud-pbx [class*="card"] {
   color: #E8F0FF !important;
 }
 
+/* Featured/Highlighted Cards - Same dark blue background */
+body[data-theme="light"] section#cloud-pbx .card-featured,
+body[data-theme="light"] section#cloud-pbx [class*="featured"],
+body[data-theme="light"] section#cloud-pbx [class*="highlight"],
+body[data-theme="light"] section#cloud-pbx [data-featured="true"] {
+  background: linear-gradient(145deg, #0B1F3F 0%, #0D2548 100%) !important;
+  border: 2px solid #00A3FF !important;
+  color: #E8F0FF !important;
+}
+
 /* Card titles and headings in CLOUD PBX */
 body[data-theme="light"] section#cloud-pbx .card h3,
 body[data-theme="light"] section#cloud-pbx .card h2,
