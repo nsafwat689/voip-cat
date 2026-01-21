@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import ThemeToggle from '@/components/ThemeToggle';
 
 /**
  * Header Component - Cyber Tech Design
@@ -56,11 +55,9 @@ export default function Header() {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <ThemeToggle />
             <a
               href="https://wa.me/201557649136?text=Hello%20VoIP%20Cat"
               target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-4 py-2 border border-primary text-primary hover:bg-primary/5 rounded-md uppercase tracking-wider text-xs transition-colors"
               style={{ fontFamily: 'Orbitron, sans-serif' }}
             >
